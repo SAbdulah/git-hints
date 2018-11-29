@@ -1,0 +1,10 @@
+#check the ID log of the commit I wanted to revert back 
+git log --oneline
+#choose your target branch
+git checkout target-branch
+#revert back to this commit
+git reset target-commit
+#It will not allow you to push it as your remote branch was behind my master branch
+git push
+#force pushing
+git push -f
